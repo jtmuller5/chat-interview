@@ -45,22 +45,4 @@ function promptUser(message: string) {
   });
 }
 
-// loop over multiple questions
-const questions = [
-  "What is your name?",
-  "How are you today?",
-  "What message would you like to leave?",
-];
-
-async function askQuestions(questions: string[], index: number = 0) {
-  if (index < questions.length) {
-    rl.question(questions[index] + "\n", async (answer) => {
-      console.log("Echo: " + answer);
-      await askQuestions(questions, index + 1);
-    });
-  } else {
-    rl.close();
-  }
-}
-
 promptUser("What message would you like to leave?");

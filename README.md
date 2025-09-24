@@ -18,3 +18,8 @@ Create a CLI chat bot to take messages for a bakery. The bot should:
 
 For example:
 [John Doe]: I was wondering what time the bakery opened.
+
+## Setup
+1. npm i
+2. Add `GEMINI_API_KEY={your_api_key}` to `.env`
+3. npm run dev
