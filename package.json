@@ -1,0 +1,28 @@
+{
+  "name": "typescript-echo-bot",
+  "version": "1.0.0",
+  "description": "A simple CLI bot that echoes user input",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts"
+  },
+  "keywords": [
+    "cli",
+    "bot",
+    "echo",
+    "typescript"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@google/genai": "^1.20.0",
+    "dotenv": "^17.2.2"
+  }
+}
