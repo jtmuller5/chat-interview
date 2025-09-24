@@ -18,5 +18,3 @@ Create a CLI chat bot to take messages for a bakery. The bot should:
 
 For example:
 [John Doe]: I was wondering what time the bakery opened.
-
-
