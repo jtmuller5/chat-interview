@@ -23,3 +23,7 @@ For example:
 1. npm i
 2. Add `GEMINI_API_KEY={your_api_key}` to `.env`
 3. npm run dev
+
+## Starting Assumptions
+- The user's response to each prompt will be correct
+- The user will not give more information than what is requested
