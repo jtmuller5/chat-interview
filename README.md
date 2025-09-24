@@ -1,56 +1,22 @@
-# TypeScript Echo Bot
+## Task 
 
-A simple command-line bot that echoes back everything you type. Press "q" to quit the application.
+Create a CLI chat bot to take messages for a bakery. The bot should:
+1. Ask the user what message they would like to leave
+2. Ask for their first and last name
+3. Repeat the message back to the user at the end of the conversation to confirm it is correct
+3a. If yes, say thank you and end the call
+3b. If no, clear the current message and start over
 
-## Prerequisites
-
-- Node.js (version 14 or higher)
-- npm
-
-## Installation
-
-1. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-## Usage
-
-### Development Mode (with TypeScript directly)
-```bash
-npm run dev
-```
-
-### Production Mode (compiled JavaScript)
-1. Build the project:
-   ```bash
-   npm run build
-   ```
-
-2. Run the compiled version:
-   ```bash
-   npm start
-   ```
-
-## How to Use
-
-1. Start the bot using one of the commands above
-2. Type any message and press Enter - the bot will echo it back
-3. Type "q" and press Enter to quit the application
-
-## Project Structure
+### CLI Shortcuts
+- Pressing "q" should exit the chat
+- Pressing "c" should print out the formatted conversation
+- Pressing "m" should print out the user's message using the following format:
 
 ```
-├── src/
-│   └── index.ts          # Main bot implementation
-├── dist/                 # Compiled JavaScript (after npm run build)
-├── package.json          # Project dependencies and scripts
-├── tsconfig.json         # TypeScript configuration
-└── README.md            # This file
+[First Last]: Message
 ```
 
-## Scripts
+For example:
+[John Doe]: I was wondering what time the bakery opened.
 
-- `npm run build` - Compile TypeScript to JavaScript
-- `npm run start` - Run the compiled JavaScript version
-- `npm run dev` - Run directly with ts-node (development)
+
