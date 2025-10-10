@@ -25,6 +25,5 @@ For example:
 - The user's input may be poorly formatted
 
 ## Setup
-1. npm i
-2. Add `GEMINI_API_KEY={your_api_key}` to `.env`
-3. npm run dev
+1. npm i (optional)
+2. npm run dev
