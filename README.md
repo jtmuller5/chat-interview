@@ -3,11 +3,6 @@ Create a CLI chat bot to take messages for a bakery. The bot should:
 1. Ask the user what message they would like to leave
 2. Ask for their first and last name
 
-### CLI Shortcuts
-- Pressing "q" should exit the chat
-- Pressing "c" should print out the formatted conversation
-- Pressing "m" should print out the user's message using the following format:
-
 ```
 [First Last]: Message
 ```
@@ -23,6 +18,10 @@ For example:
 ## Task 2 Assumptions
 - We need to ask the user for an unknown amount of information (DOB, email, phone number, etc)
 - The user's input may be poorly formatted
+- The user is expecting shortcuts:
+  - Pressing "q" should exit the chat
+  - Pressing "c" should print out the formatted conversation
+  - Pressing "m" should print out the user's message using the following format:
 
 ## Setup
 1. npm i (optional)
