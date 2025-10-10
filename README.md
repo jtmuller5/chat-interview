@@ -16,14 +16,13 @@ For example:
 [John Doe]: I was wondering what time the bakery opened.
 
 ## Task 1 Assumptions
-(No generative AI)
+- We only need the user's name and message
 - The user's response to each prompt will be correct
 - The user will not give more information than what is requested
 
 ## Task 2 Assumptions
-(Will need to use Generative AI)
-- The user will respond like a normal person
-- There's no guarantee what the user will say
+- We need to ask the user for an unknown amount of information (DOB, email, phone number, etc)
+- The user's input may be poorly formatted
 
 ## Setup
 1. npm i

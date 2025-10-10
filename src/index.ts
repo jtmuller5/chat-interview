@@ -1,37 +1,17 @@
-import { GoogleGenAI } from "@google/genai";
-import * as dotenv from "dotenv";
 import * as readline from "readline";
 
 /*
 To read input from the command line:
 rl.question('Enter something: ', (answer) => {
     console.log(`You entered: ${answer}`);
-});
-*/
-
-/*
-To close input stream:
-rl.close();
-*/
-
-/*  
-Generate AI response:
-const response = await ai.models.generateContent({
-    model: "gemini-2.5-flash",
-    contents: answer,
-    config: {
-        systemInstruction: `System Instruction...`
-    }
+    rl.close();
 });
 
-console.log("Response: ", response);
+Notes:
+- rl.question() uses a callback to handle the user's input asynchronously (it is not a Promise).
+- rl.question() can only process one question at a time.
+- rl.close() closes the input stream permanently.
 */
-
-dotenv.config();
-
-const ai = new GoogleGenAI({
-  apiKey: process.env.GEMINI_API_KEY || "",
-});
 
 const rl = readline.createInterface({
   input: process.stdin,
@@ -41,7 +21,6 @@ const rl = readline.createInterface({
 function promptUser(message: string) {
   rl.question(message + "\n", async (answer) => {
     console.log("Echo: " + answer);
-    rl.close();
   });
 }
 
